@@ -25,7 +25,7 @@ const Quiz = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5500/quiz")
+      .get("https://quiz-server-toiu.onrender.com/quiz")
       .then((response) => {
         setQuiz(response.data);
         setLoading(false);
