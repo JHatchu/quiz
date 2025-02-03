@@ -1,38 +1,66 @@
-.App {
+.quiz-container {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('https://th.bing.com/th/id/OIP.drAkYIGUtDO70Ez8nTEnNQHaEK?rs=1&pid=ImgDetMain');
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  overflow: hidden;
+}
+
+.countdown {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.car-animation {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.quiz-content {
+  text-align: left;
+  margin-top: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  width: 80%;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.quiz-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.question-container {
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+}
+
+.restart-button {
+  background-color: #4CAF50;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.restart-button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.finish-message,
+.crash-message {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
